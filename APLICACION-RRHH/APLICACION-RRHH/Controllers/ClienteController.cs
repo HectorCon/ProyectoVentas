@@ -1,5 +1,4 @@
-﻿using APLICACION_RRHH.Entidad;
-using APLICACION_RRHH.EntidadDto;
+﻿using APLICACION_RRHH.EntidadDto;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.Data;
