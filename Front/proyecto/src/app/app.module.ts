@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClienteComponent } from './cliente/cliente.component';
 import { ModclienteComponent } from './modcliente/modcliente.component';
 import { ListClientesComponent } from './list-clientes/list-clientes.component';
+import { ProveedorComponent } from './proveedor/proveedor.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListClientesComponent } from './list-clientes/list-clientes.component';
     DashboardComponent,
     ClienteComponent,
     ModclienteComponent,
-    ListClientesComponent
+    ListClientesComponent,
+    ProveedorComponent
   ],
   imports: [
     BrowserModule,

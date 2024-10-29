@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { ModclienteComponent } from './modcliente/modcliente.component';
 import { ListClientesComponent } from './list-clientes/list-clientes.component';
+import { ProveedorComponent } from './proveedor/proveedor.component';
 
 const routes: Routes = [
       {path: 'login', component: LoginComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
       {path: 'cliente', component: ClienteComponent},
       {path: 'modcliente', component: ModclienteComponent},
       {path: 'list-clientes', component: ListClientesComponent},
+      {path: 'proveedor', component: ProveedorComponent},
       {path: '', redirectTo: '/login', pathMatch: 'full'}
 ];
 
