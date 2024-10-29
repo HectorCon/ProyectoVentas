@@ -1,0 +1,158 @@
+[
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.DepartamentoController",
+    "Method": "GetDepartamentos",
+    "RelativePath": "Departamento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.DescuentosSalarioController",
+    "Method": "GetDescuentosSalario",
+    "RelativePath": "DescuentosSalario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.EmpleadoController",
+    "Method": "PostEmpleado",
+    "RelativePath": "Empleado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleado",
+        "Type": "APLICACION_RRHH.EntidadDto.EmpleadoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.EmpleadoController",
+    "Method": "GetEmpleados",
+    "RelativePath": "Empleado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.EmpleadoController",
+    "Method": "UpdateEmpleado",
+    "RelativePath": "Empleado/{idEmpleado}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleado",
+        "Type": "APLICACION_RRHH.EntidadDto.EmpleadoDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "idEmpleado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.MunicipioController",
+    "Method": "GetMunicipiosPorDepartamento",
+    "RelativePath": "Municipio/{codigoDepartamento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoDepartamento",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.NominaController",
+    "Method": "GetNomina",
+    "RelativePath": "Nomina",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.NominaController",
+    "Method": "DeleteNomina",
+    "RelativePath": "Nomina",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idNomina",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.NominaController",
+    "Method": "RegistroEncabezado",
+    "RelativePath": "Nomina",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nominaDto",
+        "Type": "APLICACION_RRHH.EntidadDto.SpNominaDtp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.PuestoController",
+    "Method": "GetPuestosTrabajo",
+    "RelativePath": "Puesto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APLICACION_RRHH.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[APLICACION_RRHH.WeatherForecast, APLICACION-RRHH, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
