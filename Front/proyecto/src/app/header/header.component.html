@@ -1,0 +1,65 @@
+<div class="d-flex flex-column vh-100">
+    <!-- Header -->
+    <header class="bg-dark text-white p-3 position-relative">
+      <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg" x="0px" y="0px" width="150px" height="150px" viewBox="0 0 213.235 241.176" enable-background="new 0 0 213.235 241.176" xml:space="preserve" fill="#0057B8">
+          <path d="M108.581,64.968V14.124l44.007,25.422L108.581,64.968"/>
+          <path fill-opacity="0.9" d="M153.591,92.101V41.258L109.582,66.68L153.591,92.101"/>
+        </svg>
+      </div>
+      <h1 class="text-center">RECURSOS HUMANOS S.A.</h1>
+    </header>
+  
+    <div class="d-flex flex-grow-1">
+      <!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="text-center p-3">
+          <h4 class="text-white">Servicios</h4>
+        </div>
+        <nav class="nav flex-column">
+
+          <!-- Menú de Empleados -->
+          <div class="nav-item mb-3" id="empleadosMenu">
+            <a class="nav-link" href="#" id="empleadosLink">Cliente</a>
+            <div class="sub-menu" id="subMenuEmpleado">
+              <a class="nav-link" [routerLink]="['/cliente']">Crear Cliente</a>
+              <a class="nav-link" [routerLink]="['/modcliente']">Modificar Cliente</a>
+              <a class="nav-link" [routerLink]="['/list-clientes']">Lista Clientes</a>
+            </div>
+          </div>
+
+          <!-- Reportes -->
+          <div class="nav-item mb-3" id="reportesMenu">
+            <a class="nav-link" href="#" id="reportesLink">Reportes</a>
+            <div class="sub-menu" id="subMenuReporte">
+              <a class="nav-link" [routerLink]="['/historialpago']">Reporte Pagos</a>
+            </div>
+          </div>
+
+          <!-- Menú de Pagos -->
+          <div class="nav-item mb-3" id="pagosMenu">
+            <a class="nav-link" href="#" id="pagosLink">Pagos</a>
+            <div class="sub-menu" id="subMenuPago">
+              <a class="nav-link" [routerLink]="['/pagos']">Crear Pago</a>
+              <a class="nav-link" [routerLink]="['/list-pagos']">Lista Pagos</a> 
+            </div>
+          </div>
+          <a class="nav-link mb-3" href="#">Cerrar Sesión</a>
+        </nav>
+      </div>
+  
+      <!-- Contenido principal -->
+      <div class="flex-grow-1">
+        <router-outlet></router-outlet> <!-- Aquí se cargan las rutas -->
+      </div>
+    </div>
+  </div>
+  <script>
+    // Script para manejar la colapsabilidad del sidebar
+    const toggleButton = document.getElementById('toggleSidebar');
+    const sidebar = document.getElementById('sidebar');
+  
+    toggleButton.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+    });
+  </script>
